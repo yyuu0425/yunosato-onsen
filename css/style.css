@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/* すべてのページに適応 */
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p,
+li,
+td {
+  line-height: 1.7;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* すべてのページに適応 header */
+
+.spa {
+  border-bottom: 5px double #253958;
+}
+
+.spa img {
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+h1 {
+  padding: 70px 10px;
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-shadow: 3px 3px 3px #333;
+}
+
+/* すべてのページに適応 main */
+
+main {
+  padding: 0 4%;
+}
+
+h2 {
+  border-bottom: solid 2px;
+  margin: 40px 20px;
+}
+
+.lala-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: aliceblue;
+  border: 2px solid #000080;
+}
+
+.lala-logo img {
+ width: 100%;
+}
+
+dl,
+dt,
+dd {
+  border: 1px solid #333;
+  text-align: left;
+}
+
+dt,
+dd {
+  padding: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+.submit {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid #333;
+  padding: 15px;
+  text-align: center;
+}
+
+/* すべてのページに適応 footer */
+
+footer {
+  padding-top: 20px;
+}
+
+small {
+  color: #fff;
+}
+
+.gotop {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.copyright {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #253958;
+}
+
+/* 個別のページ */
+
+/*  index.html */
+
+.hero.index {
+  background-image: url(../images/leaf.jpg);
+}
+
+.news {
+  margin-bottom: 70px;
+}
+
+.spa-boxes {
+  background-image: url(../images/onsen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 70px 20px 5px;
+}
+
+.spa-box {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spa-box h3 {
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+.spa-image img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.spa-text p {
+  color: #fff;
+}
+
+/* access.html */
+.hero.access {
+  background-image: url(../images/car.jpg);
+}
+
+s .map iframe {
+  width: 100%;
+}
+
+/* contact.html */
+
+.hero.contact {
+  background-image: url(../images/stone.jpg);
+}
+
+.submit input {
+  width: 60px;
+  height: 35px;
+  margin-top: 20px;
+}
+
+/* price.html */
+
+.hero.price {
+  background-image: url(../images/lake.jpg);
+}
+
+.day th {
+  background-color: #253958;
+  color: #fff;
+}
+
+.spa-price,
+.massage-price {
+  margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    letter-spacing: 10px;
+  }
+
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  dt {
+    width: 200px;
+  }
+
+  dd {
+    width: calc(100% - 200px);
+  }
+
+  /*  index.html */
+  .lala-logo img {
+  width: 500px;
+  height: 167px;
+  }
+
+  .spa-box {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .spa-box h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .spa-image,
+  .spa-text {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .spa-text p {
+    line-height: 1.8;
+  }
+
+  .spa-box:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* access.html */
+  .map iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
